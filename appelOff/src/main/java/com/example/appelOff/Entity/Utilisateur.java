@@ -33,6 +33,10 @@ public class Utilisateur {
 
     private String email;
 
+    @JsonIgnore
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<Like> likesList;
+
 
     @JsonIgnore
     @OneToMany(mappedBy = "createur")

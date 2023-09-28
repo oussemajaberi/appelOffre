@@ -1,0 +1,11 @@
+
+
+java:S14884"dImmediately return this expression instead of assigning it to the temporary variable "createdOffre".(¬»´Ü8‹ÖŸ¨1
+u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Õñ˜t8ÖŸ¨1
+j	java:S1001"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔõÇ8€×Ÿ¨1
+]
+java:S46841"@Replace this persistent entity with a simple POJO or DTO object.(ÔõÇ8ˆ×Ÿ¨1
+c
+java:S4684¸"@Replace this persistent entity with a simple POJO or DTO object.(Ÿ ¿Ñûÿÿÿÿ8À×Ÿ¨1
+w
+java:S1128"URemove this unused import 'org.springframework.transaction.annotation.Transactional'.(ğùçøùÿÿÿÿ8××Ÿ¨1

@@ -1,0 +1,9 @@
+
+s	java:S117š"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïÄ±–úÿÿÿÿ8¬Ğ‹‘¢1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(À…‹8¼Ğ‹‘¢1
+I
+java:S1168˜"+Return an empty collection instead of null.(¥¹ï8¨Ó‹‘¢1
+B
+java:S1168Ÿ"$Return an empty map instead of null.(¥¹ï8ÖÓ‹‘¢1
+I
+java:S1168¦"+Return an empty collection instead of null.(¥¹ï8×Ó‹‘¢1

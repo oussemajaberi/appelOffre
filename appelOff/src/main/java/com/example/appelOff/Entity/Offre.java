@@ -1,10 +1,14 @@
 package com.example.appelOff.Entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -23,9 +27,26 @@ public class Offre {
     @Column(nullable = false, length = 1000)
     private String description;
 
+
+    @CreationTimestamp
+    private LocalDateTime dateCreation;
+
+    private Long likes; // New field for storing the number of likes
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "offer", cascade = CascadeType.ALL)
+    private List<Like> likesList;
+
     @ManyToOne
     @JoinColumn(name = "createur_utilisateur_id")
     private Utilisateur createur;
+
+
+    @Enumerated(EnumType.STRING)
+    private Categories categorie;
+
+    @Enumerated(EnumType.STRING)
+    private Status status;
 
     @ManyToMany
     @JoinTable(
